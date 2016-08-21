@@ -1,0 +1,11 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Employee Application</a>
+    </div>
+    <ul class="nav navbar-nav">
+      {{#link-to 'employees' tagName="li"}} <a href> Employee List </a>{{/link-to}}
+      {{#link-to 'addEmployee' tagName="li"}} <a href> Add Employee </a>{{/link-to}}
+    </ul>
+  </div>
+</nav>
