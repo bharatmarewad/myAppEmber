@@ -10,6 +10,8 @@
         <th>Last Name</th>
         <th>Email</th>
         <th>Phone Number</th>
+        <th>Edit</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody>
@@ -20,6 +22,8 @@
           <td>{{employee.lastName}}</td>
           <td>{{employee.emailAddress}}</td>
           <td>{{employee.phoneNumber}}</td>
+          <td><button class="btn btn-primary btn-xs">edit</button></td>
+          <td><button class="btn btn-danger btn-xs" {{action 'removeEmployee' employee}}>Delete</button></td>
         </tr>
       {{/each}}
     </tbody>
