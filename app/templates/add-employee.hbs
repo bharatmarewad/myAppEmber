@@ -1,11 +1,11 @@
 <form>
   <div class="form-group">
     <label for="firstName">First Name:</label>
-    {{input type="text" value=firstName class="form-control"}}
+    {{input type="text" value=model.firstName class="form-control"}}
   </div>
   <div class="form-group">
     <label for="middleName">Middle Name:</label>
-    {{input type="text" value=middleName class="form-control"}}
+    {{input type="text" value=model.middleName class="form-control"}}
   </div>
   <div class="form-group">
     <label for="lastName">Last Name:</label>
@@ -24,7 +24,7 @@
         <button type="reset" class="btn btn-default">Reset</button>
     </div>
     <div class="col-lg-1">
-        <button type="submit" class="btn btn-primary" {{action "addEmployee"}}>Submit</button>
+        <button type="submit" class="btn btn-primary" {{action "addEmployee" model}}>Submit</button>
     </div>
   </div>
 </form>
