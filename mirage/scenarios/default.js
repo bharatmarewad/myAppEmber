@@ -1,4 +1,4 @@
 export default function(server) {
 
-  server.createList('employee', 15);
+  server.createList('employee-detail', 15);
 }
